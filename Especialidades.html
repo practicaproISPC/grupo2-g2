@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="StyleSheet" a href="Fonts/stylesheet.css">
+    <link rel="StyleSheet" a href="CSS/Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../Portfolio/img/hospital.png">
+    <title>Especialidades</title>
+</head>
+<header> 
+  <nav>
+      <button id="BotónHome" type="button" class="btn"><a href="file:///C:/Users/facuo/Desktop/Sitios%20Web/Portfolio/Home.html">  Home </button> </a>
+  <h1 class="At">Especialidades Médicas </h1>
+  
+  </nav>
+      </header>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #318c6c;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: rgba(99, 211, 166, 0.639);
+}
+.mystyle {
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar Especialidades." title="Type in a name">
+
+
+ 
+
+   
+<ul id="myUL">
+  <li class="liespe"><a href="#">Psicología</a></li>
+  <li  class="liespe"><a href="#">Psiquiatria</a></li>
+
+  <li class="liespe"><a href="#">Oftalmología</a></li>
+  <li class="liespe"><a href="#">Diagnóstico por imagenes</a></li>
+
+  <li class="liespe"><a href="#">Traumatología</a></li>
+  <li class="liespe"><a href="#">Ginecología</a></li>
+  <li class="liespe"><a href="#">Pediatría</a></li>
+
+  <li class="liespe"><a href="#">Obstetricia</a></li>
+</ul>
+
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+    
+</body>
+</html>
